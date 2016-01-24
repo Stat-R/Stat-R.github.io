@@ -15,8 +15,16 @@ a {
   a:hover {
     text-decoration: underline; }
 .hari {
+  /*background: #ffeedd;*/
+  color: #ffeedd;
+  font-size: '2 em';
+  border-color: 'red';
+}.
+.hari1 {
   background: #ffeedd;
-  color: #112233;
+  color: #f11edd;
+  font-size: '5 em';
+  border-color: 'red';
 }
 .btn {
   display: inline-block;

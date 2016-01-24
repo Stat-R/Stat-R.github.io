@@ -1,39 +1,98 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <title>Stat-r.GitHub.io by Stat-R</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-  </head>
-  <body>
-    <section class="page-header">
-      <h1 id ='mera nam' class="hari">Namaskar mitra...</h1>
-      <h2 class="project-tagline"></h2>
-    </section>
-
-    <section class="main-content">
-      <h3>
-<a id="welcome-to-my-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+<head>
+  <meta charset="UTF-8">
+  <title>Stat-r.GitHub.io by Stat-R</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+</head>
+<body>
+  <section class="page-header">
+    <h1 id ='mera nam' class="hari">Welcome to transportation data visualization</h1>
+    <h2 class="project-tagline"></h2>
+  </section>
+  <a href="http://www.ccc.commnet.edu/faculty/sfreeman/cst%20250/jQueryNotes.pdf" download><button>Some pdf</button></a>
 
 
-<img src="multi-combination-600.jpg">
-  
-  <script type="text/javascript">
+  <section class="main-content">
+    <h3>
+      <a id="welcome-to-my-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>You will see various types of visualizations here...</h3>
+
+      <img src="multi-combination-600.jpg">
+      <img src="multi-combination-600.jpg"  name = 'secondImage' id='second'>
+      <img id='rama' src="biking-in-seattle_525329871b86f.jpg">
+
+      <script type="text/javascript">
+
+        // var heatmap = h337.create({
+        //   container: domElement
+        // });
+
+// heatmap.setData({
+//   max: 5,
+//   data: [{ x: 10, y: 15, value: 5}, ...]
+// });
+
+<style type='text/css'>
+    .highlighted {
+        background-color:Red;
+    }
+    </style>
 
 $("document").ready(function() {
+  $("p").css("color", "blue").css('fontFamily','consolas').css('fontSize','2em');
+  
+  $('p').animate({left: '+=90px',top: '+=150px',opacity: 0.01}, 900, 'linear');
+// $('#keshav').hover(high1,high1);
 
-$("p").css("color", "red");
+$('#keshav').hover(high1,high1);
+$('#rama').click(Functrigger);
 
+function Functrigger(){
+  $('#keshav').trigger('23');
+}
+function high1(){
+  $('#keshav').trigger('highlighted');
+}
+
+
+$('h3').css('background','#44ff55')
+$('h3').attr('class','hari1')
+
+$('p1').append("<a href='#secondImage'>Come here</a>")
+
+  $('this').css('fontFamily','Times')
+
+  // $("li(name='MOBILE')").click(function() {
+  //   $(this).hide();
+  // });
+
+$("img[id='second']").css({"border-color": "blue",
+ "border-width":"2px",
+ "border-style":"solid"});
+  // $("#ul[name='something']").click(function() {
+  //   $(this).hide();
+  // });
+// 
+// $("li[class='go']").append(" (with Transmodeller outputs)");
+$("p1").delay(2000);
 });
 
+</script>
 
-  </script>
+<style type="text/css"> .bolder{ font-weight: bolder;background-color: #f2f2f2;border-style: solid;border-color: #f2f2ee; border-width: 0.1;} </style>
+<p class='hari'>Disappearing text ... yes me.....</p>
+<h3 id='keshav'>Spome other tezt.... </h3>
+<ul name = 'something'>
+  <li class='bolder'> Speed heat map (Time Space Diagram)</li>
+  <li class='bolder'> Transportation Reinvestment Zone - Financial Model</li>
+  <li class='bolder' name='MOBILE'> MOVES Emissions Estimation</li>
+  <li class='go'> I will be gone </li>
+</ul>
 
-
-  </body>
+</body>
 </html>
