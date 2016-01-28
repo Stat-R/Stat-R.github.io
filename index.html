@@ -1,98 +1,163 @@
-<!DOCTYPE html>
-<html lang="en-us">
-<head>
-  <meta charset="UTF-8">
-  <title>Stat-r.GitHub.io by Stat-R</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-  <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-</head>
-<body>
-  <section class="page-header">
-    <h1 id ='mera nam' class="hari">Welcome to transportation data visualization</h1>
-    <h2 class="project-tagline"></h2>
-  </section>
-  <a href="http://www.ccc.commnet.edu/faculty/sfreeman/cst%20250/jQueryNotes.pdf" download><button>Some pdf</button></a>
+        <!DOCTYPE html>
+        <html lang="en-us">
+        <head>
+        <meta charset="UTF-8">
+        <title>Stat-r.GitHub.io by Stat-R</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+        <style type='text/css'>
+
+        .highlighted {
+          background-color:Red;
+        }
+
+        h1:hover{
+          color: #c4f;
+          font-weight: bold;
+          font-size: 3em;
+          font-style: italic;
+        }
+      body:hover{
+
+      background-color:rgb(250,250,200);
+      /*background-color:#d0e;*/
+
+      }
+      .rama{
+        font-size: 3em;
+      }
+
+      h2.manny{
+        background-color: hsl(30,40,50);
+      }
+      .border {
+        background-color: hsl(30,40,50);
+      }
 
 
-  <section class="main-content">
-    <h3>
-      <a id="welcome-to-my-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>You will see various types of visualizations here...</h3>
+        .main_block {
+        width: 800px;
+        border: 2px blue solid;
+        }
 
-      <img src="multi-combination-600.jpg">
-      <img src="multi-combination-600.jpg"  name = 'secondImage' id='second'>
-      <img id='rama' src="biking-in-seattle_525329871b86f.jpg">
+        .inner_block {
+        display: inline-block;
+        float: left;
+        width: 50%;
+        }
 
-      <script type="text/javascript">
+        .blur-me {
+        /*filter: blur(20px);*/
+        -webkit-filter:blur(4px);
+      }
+        .negative {
+        /*filter: blur(20px);*/
+        -webkit-filter:invert(100%);
+      }
 
-        // var heatmap = h337.create({
-        //   container: domElement
+        </style>
+
+        </head>
+
+        <!-- Head ends .................. -->
+        <body bgcolor="#E6E6FA">
+
+
+        <section class="page-header">
+        <h1 id ='mera nam' class="rama">Welcome to transportation data visualization</h1>
+        <h2 >Some text whose color will chanege ,,, </h2>
+
+        </section>
+        <!-- <a href="http://www.ccc.commnet.edu/faculty/sfreeman/cst%20250/jQueryNotes.pdf" download><button>Some pdf</button></a> -->
+
+        <section class="main-content">
+        <h3>
+          <a id="welcome-to-my-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>You will see various types of visualizations here...</h3>
+          <h4 id="welcome-to-my-pages" style='color:red' >You will see various types of visualizations here...</h4>
+
+          <!-- <img src="multi-combination-600.jpg"  name = 'secondImage' id='second'> -->
+          <!-- <img id='rama' src="biking-in-seattle_525329871b86f.jpg"> -->
+          <div class='main_block'>
+          
+             <div class='.inner_block'><img id='hariom' src="MATLAB_visTool.png" ></div>
+          <!-- <div class='.inner_block'><img id='shyam' class='blur-me' src="Speedheatmap.png" ></div> -->
+          <div class='.inner_block'><img id='shyam' class='negative' src="Speedheatmap.png" ></div>
+          <div class='.inner_block''><img id='shyam' src="Speedheatmap.png" ></div>
+          
+        </div>
+         
+
+          <script type="text/javascript">
+
+            // var heatmap = h337.create({
+            //   container: domElement
+            // });
+
+        // heatmap.setData({
+        //   max: 5,
+        //   data: [{ x: 10, y: 15, value: 5}, ...]
         // });
 
-// heatmap.setData({
-//   max: 5,
-//   data: [{ x: 10, y: 15, value: 5}, ...]
-// });
-
-<style type='text/css'>
-    .highlighted {
-        background-color:Red;
-    }
-    </style>
-
-$("document").ready(function() {
-  $("p").css("color", "blue").css('fontFamily','consolas').css('fontSize','2em');
-  
-  $('p').animate({left: '+=90px',top: '+=150px',opacity: 0.01}, 900, 'linear');
-// $('#keshav').hover(high1,high1);
-
-$('#keshav').hover(high1,high1);
-$('#rama').click(Functrigger);
-
-function Functrigger(){
-  $('#keshav').trigger('23');
-}
-function high1(){
-  $('#keshav').trigger('highlighted');
-}
 
 
-$('h3').css('background','#44ff55')
-$('h3').attr('class','hari1')
 
-$('p1').append("<a href='#secondImage'>Come here</a>")
 
-  $('this').css('fontFamily','Times')
+        $("document").ready(function() {
+        $("p").css("color", "blue").css('fontFamily','consolas').css('fontSize','2em');
 
-  // $("li(name='MOBILE')").click(function() {
-  //   $(this).hide();
-  // });
+        $('p').animate({left: '+=90px',top: '+=150px',opacity: .1}, 3000, 'linear');
+        // $('#keshav').hover(high1,high1);
 
-$("img[id='second']").css({"border-color": "blue",
- "border-width":"2px",
- "border-style":"solid"});
-  // $("#ul[name='something']").click(function() {
-  //   $(this).hide();
-  // });
-// 
-// $("li[class='go']").append(" (with Transmodeller outputs)");
-$("p1").delay(2000);
-});
+        $('#keshav').hover(high1,high1);
+        $('#rama').click(Functrigger);
 
-</script>
+        function Functrigger(){
+        $('#keshav').trigger('highlighted');
+        }
+        function high1(){
+        $('#keshav').trigger('highlighted');
+        }
 
-<style type="text/css"> .bolder{ font-weight: bolder;background-color: #f2f2f2;border-style: solid;border-color: #f2f2ee; border-width: 0.1;} </style>
-<p class='hari'>Disappearing text ... yes me.....</p>
-<h3 id='keshav'>Spome other tezt.... </h3>
-<ul name = 'something'>
-  <li class='bolder'> Speed heat map (Time Space Diagram)</li>
-  <li class='bolder'> Transportation Reinvestment Zone - Financial Model</li>
-  <li class='bolder' name='MOBILE'> MOVES Emissions Estimation</li>
-  <li class='go'> I will be gone </li>
-</ul>
 
-</body>
-</html>
+        $('h3').css('background','#44ff55')
+        $('h3').attr('class','hari1')
+
+        $('p1').append("<a href='#secondImage'>Come here</a>")
+
+        $('this').css('fontFamily','Times')
+
+        // $("li(name='MOBILE')").click(function() {
+        //   $(this).hide();
+        // });
+
+        $("img[id='second']").css({"border-color": "blue",
+        "border-width":"2px",
+        "border-style":"solid"});
+        // $("#ul[name='something']").click(function() {
+        //   $(this).hide();
+        // });
+        // 
+        // $("li[class='go']").append(" (with Transmodeller outputs)");
+        $("p1").delay(2000);
+        });
+
+        </script>
+
+        <style type="text/css"> .bolder{ font-weight: bolder;background-color: #f2f2f2;border-style: solid;border-color: #f2f2ee; border-width: 0.1;} </style>
+        <p class='hari'>Disappearing text ... yes me.....</p>
+        <h3 id='keshav'>Some other tezt.... </h3>
+        <ul name = 'something'>
+        <li class='bolder'> Speed heat map (Time Space Diagram)</li>
+        <li class='bolder'> Transportation Reinvestment Zone - Financial Model</li>
+        <li class='bolder' name='MOBILE'> MOVES Emissions Estimation</li>
+        <li class='go'> I will be gone </li>
+        </ul>
+        <h2 class="rama">
+        Thank you Sir...
+        </h2>
+        </body>
+        </html>
